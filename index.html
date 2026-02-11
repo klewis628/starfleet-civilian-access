@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STARBASE‑ONE — Civilian Access Terminal</title>
+  <link rel="stylesheet" href="lcars.css" />
+</head>
+<body class="lcars-bg">
+  <header class="lcars-header">
+    <div class="lcars-emblem-wrap">
+      <img class="lcars-emblem" src="assets/starfleet-seal.svg" alt="Starfleet Command Seal"/>
+    </div>
+    <h1 class="lcars-title">STARBASE‑ONE — CIVILIAN ACCESS TERMINAL</h1>
+    <p class="lcars-facility">Facility: STARBASE‑ONE — Civilian Access Terminal</p>
+    <p class="lcars-auth">Authorization Class: Guest‑0</p>
+    <div class="lcars-stardate">
+      <span class="label">Stardate</span>
+      <span id="stardate-value" class="value">Loading…</span>
+    </div>
+  </header>
+
+  <section id="mission-briefing" class="lcars-panel" hidden>
+    <div class="lcars-panel-bar">
+      <span class="lcars-panel-title">MISSION BRIEFING</span>
+      <span id="mb-updated" class="lcars-panel-sub"></span>
+    </div>
+    <div id="mb-body" class="lcars-panel-body"></div>
+  </section>
+
+  <section class="lcars-tos">
+    <div class="lcars-tos-bar"></div>
+    <h2 class="lcars-tos-title">Starfleet Command Guest Wi‑Fi Terms of Service</h2>
+    <div class="lcars-tos-body">
+      <p><strong>Effective Date:</strong> Stardate 298054.14</p>
+      <ol>
+        <li><strong>Acceptable Use</strong>
+          <ul>
+            <li>This network is intended for official communications and appropriate personal use.</li>
+            <li>Any attempts to access classified Starfleet files, unauthorized subspace channels, or restricted systems are strictly prohibited.</li>
+            <li>Users must not engage in activities that jeopardize interstellar security, including but not limited to hacking, cyber espionage, or unauthorized transmissions.</li>
+          </ul>
+        </li>
+        <li><strong>Privacy &amp; Security</strong>
+          <ul>
+            <li>Communications on this network may be monitored for security purposes.</li>
+            <li>Starfleet Command is not responsible for any intercepted transmissions by hostile species or rogue factions.</li>
+            <li>Users should not transmit sensitive Federation data or personal information over unsecured channels.</li>
+          </ul>
+        </li>
+        <li><strong>Limitation of Liability</strong>
+          <ul>
+            <li>Starfleet Command is not liable for any disruptions due to solar flares, cloaked vessels, tachyon bursts, or subspace anomalies.</li>
+            <li>The Wi‑Fi service is provided on an “as‑is” basis, with no guarantees of uninterrupted connectivity in warp zones or areas affected by ion storms.</li>
+          </ul>
+        </li>
+        <li><strong>Termination &amp; Enforcement</strong>
+          <ul>
+            <li>Violations of these terms may result in immediate disconnection and possible disciplinary action by the Federation Council.</li>
+            <li>Starfleet reserves the right to revoke access at any time, especially in cases of suspected security breaches.</li>
+          </ul>
+        </li>
+        <li><strong>Logging &amp; Monitoring Disclaimer</strong>
+          <ul>
+            <li>All network activity may be recorded and monitored to ensure compliance with Federation security protocols.</li>
+            <li>Users acknowledge that logs may be reviewed for investigative purposes in the event of suspicious activity.</li>
+            <li>Starfleet Command does not guarantee the privacy of communications conducted over this network.</li>
+          </ul>
+        </li>
+      </ol>
+      <p>By using this service, you acknowledge and accept these terms. Engage responsibly, and may your downloads be swift and your connections stable.</p>
+    </div>
+    <div class="lcars-actions">
+      <button id="accept-btn" class="lcars-button accept">ACCEPT</button>
+      <button id="decline-btn" class="lcars-button decline">DECLINE</button>
+    </div>
+  </section>
+
+  <footer class="lcars-footer">
+    <div class="lcars-bar left"></div>
+    <div class="lcars-bar right"></div>
+  </footer>
+
+  <script src="lcars.js"></script>
+</body>
+</html>
